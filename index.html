@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment Estimator</title>
+    <link rel="stylesheet" href="CSS/index.css" >
+</head>
+
+<body>
+    <div id="main-content">
+
+        <form action="#" method="post" id="form">
+            <h1>Fill all the assigment details:</h1>
+            <div>
+                <label for="name-input">Name: </label>
+                <input required class="user-input" name="name" placeholder="Assigment Name" id="name-input">
+            </div>
+
+
+            <div>
+                <label for="req-input">Number of requirements:</label>
+                <!-- <label for="name"></label> -->
+                <input min="1" max="30" type="number" name="req" id="req-input" class="user-input">
+            </div>
+
+            <div>
+                <span>Languages Used:</span>
+                <span id="invalid">Please select at least one language & your proficiency in it.</span>
+            </div>
+
+            <div id="languages">
+                <div class="lang-opt">
+                    <input class="lang-check" name="HTML" type="checkbox" value="3" id="html">
+                    <label for="html">HTML</label>
+
+                    <select class="user-input proficiency" name="prof" id="prof-html">
+                        <option selected disabled value="">==Select Your Proficiency==</option>
+                        <option value="1.5">Beginner</option>
+                        <option value="1">Intermediate</option>
+                        <option value="0.5">Professional</option>
+                    </select>
+
+                </div>
+
+                <div class="lang-opt">
+                    <input class="lang-check" name="CSS" type="checkbox" value="5" id="css">
+                    <label for="css">CSS</label>
+
+                    <select class="user-input proficiency" name="prof" id="prof-css">
+                        <option selected disabled value="">==Select Your Proficiency==</option>
+                        <option value="1.5">Beginner</option>
+                        <option value="1">Intermediate</option>
+                        <option value="0.5">Professional</option>
+                    </select>
+
+                </div>
+
+                <div class="lang-opt">
+                    <input class="lang-check" name="JS" type="checkbox" value="8" id="js">
+                    <label for="js">Javascript</label>
+
+                    <select class="user-input proficiency" name="prof" id="prof-js">
+                        <option selected disabled value="">==Select Your Proficiency==</option>
+                        <option value="1.5">Beginner</option>
+                        <option value="1">Intermediate</option>
+                        <option value="0.5">Professional</option>
+                    </select>
+
+                </div>
+
+                <div class="lang-opt">
+                    <input class="lang-check" name="C#" type="checkbox" value="10" id="c">
+                    <label for="c">C#</label>
+
+                    <select class="user-input proficiency" name="prof" id="prof-c">
+                        <option selected disabled value="">==Select Your Proficiency==</option>
+                        <option value="1.5">Beginner</option>
+                        <option value="1">Intermediate</option>
+                        <option value="0.5">Professional</option>
+                    </select>
+
+                </div>
+
+                <div class="lang-opt">
+                    <input class="lang-check" name="Python" type="checkbox" value="5" id="python">
+                    <label for="python">Python</label>
+
+                    <select class="user-input proficiency" name="prof" id="prof-python">
+                        <option selected disabled value="">==Select-Your-Proficiency==</option>
+                        <option value="1.5">Beginner</option>
+                        <option value="1">Intermediate</option>
+                        <option value="0.5">Professional</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div>
+                <label for="complexity">Difficulty</label>
+                <select class="user-input" name="complexity" id="complexity">
+                    <option id="Easy" value="3">Easy</option>
+                    <option id="Medium" value="5">Medium</option>
+                    <option id="Hard" value="8">Hard</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="due">Due Date And Time</label>
+                <input required type="date" id="due">
+                <input required type="time" id="due-time" >
+            </div>
+            <button id="create" type="submit">Add to my To-Do List!</button>
+            <button id="estimate" type="submit">Estimate Time</button>
+
+
+        </form>
+
+        <div id="estimator-div">
+            <h1>Estimated Time</h1>
+            Estimated time for your assigment is: <h1 id="estimated-time">00:00</h1>
+            <div id="countdown-btns">
+                <button class="user-input" id="start-count">Start Countdown</button>
+                <button class="user-input" id="pause-count">Pause Countdown</button>
+                <button class="user-input" id="stop-count">Reset Countdown</button>
+            </div>
+        </div>
+
+        <div id="assigment-div">
+            <h1><u>Your assignments</u></h1>
+            <div class="tile-title">
+                <h3 class="title-name">Name</h3>
+                <h3 class="title-lang">Languages</h3>
+                <h3 class="title-diff">Difficulty</h3>
+                <h3 class="title-due">Due Date</h3>
+                <h3 class="title-estimate">Est.Time</h3>
+            </div>
+        </div>
+
+
+        <div id="assigment-tiles">
+          
+        </div>
+        <audio src="alarm.mp3" id="myAudio"></audio>
+    </div>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
