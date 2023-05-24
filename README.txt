@@ -1,4 +1,4 @@
-Assignment due date(pet project javascript):
+Assignment due date(pet project javascript): https://disasoni.github.io/Assignment-Due-Reminder/
 
 Details: In the assignment due date you can add or delete a list. Users will also have an option to find approximate time thah will be taken to complete assigments. I am using designing for HTML/CSS and JS which was taught in class. like Array, Object, variable, DOM.
 
